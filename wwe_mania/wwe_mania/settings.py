@@ -69,6 +69,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "wwe_mania.wsgi.application"
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'Strict'
+CSRF_TRUSTED_ORIGINS = ['https://8000-struk49-wwe-mania-3c5jxiwikp.app.codeanywhere.com']
+
+
+
 
 
 # Database
