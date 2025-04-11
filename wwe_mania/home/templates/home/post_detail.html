@@ -22,25 +22,8 @@
     </header>
    
 <main>
-    <h2 class="centre-header text-center">Blog Posts</h2>
-    <br>
-    <div class="container">
-        <div class="row">
-            {% for post in posts %}
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
-                          </h5>
-                    </div>
-                </div>
-            </div>
-            {% empty %}
-            <p>No blog posts available.</p>
-            {% endfor %}
-        </div>
-    </div>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
 </main>
 
 <footer class="bg-dark text-white text-center py-3">

@@ -24,7 +24,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'podge-the-cat')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '8000-struk49-wwe-mania-3c5jxiwikp.app.codeanywhere.com').split()
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '8000-struk49-wwe-mania-x8yp6kdzi1.app.codeanywhere.com').split()
 
 
 # Application definition
@@ -70,7 +70,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "wwe_mania.wsgi.application"
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'Strict'
-CSRF_TRUSTED_ORIGINS = ['https://8000-struk49-wwe-mania-3c5jxiwikp.app.codeanywhere.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-struk49-wwe-mania-x8yp6kdzi1.app.codeanywhere.com']
 
 
 
