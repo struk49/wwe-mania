@@ -29,6 +29,11 @@
     <div class="card">
         <div class="card-content"{{ post.content|linebreaks }}>
             <p>{{ post.content }}</p>
+            {% if user.is_superuser %}
+    <a href="{% url 'add_post' %}" class="btn btn-success">Add Post</a>
+    <a href="{% url 'delete_post' post.pk %}" class="btn btn-danger">Delete</a>
+{% endif %}
+
         </div>
         <div class="timestamp">
             Posted on {{ post.created_at }}
